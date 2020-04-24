@@ -26,6 +26,11 @@ export class NewcomponentComponent implements OnInit {
     "text-danger":!this.hasError,
     "text-special":this.isSpecial
   }
+
+  public applyStyles ={
+    color:"blue",
+    fontStyle:"italic"
+  }
   constructor() { }
 
   ngOnInit() {
