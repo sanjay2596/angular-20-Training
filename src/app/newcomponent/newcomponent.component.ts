@@ -22,6 +22,8 @@ export class NewcomponentComponent implements OnInit {
   public isSpecial = true;
   public greeting ="";
 
+  public getVal="";
+
   public messageClasses = {
     "text-success":this.hasError,
     "text-danger":!this.hasError,
