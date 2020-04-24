@@ -20,6 +20,7 @@ export class NewcomponentComponent implements OnInit {
 
   public hasError = false;
   public isSpecial = true;
+  public greeting ="";
 
   public messageClasses = {
     "text-success":this.hasError,
@@ -35,5 +36,12 @@ export class NewcomponentComponent implements OnInit {
 
   ngOnInit() {
   }
+   
+  clickHere() {
+    this.greeting='thanks for learning event binding';
+  }
 
+  printInConsole(value){
+    console.log(value);
+  }
 }
