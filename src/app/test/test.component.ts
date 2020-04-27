@@ -13,6 +13,7 @@ export class TestComponent implements OnInit {
   fireEvent(){
     this.childEvent.emit('hey how are you?')
   }
+  public date = new Date();
   ngOnInit() {
   }
 
