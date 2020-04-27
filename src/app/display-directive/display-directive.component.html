@@ -1,0 +1,18 @@
+<div *ngIf="getBoolean; then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock>
+    <h2>displaying then block</h2>
+</ng-template>
+<ng-template #elseBlock>
+    <h2>displaying else block</h2>
+</ng-template>
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">you have choosen red color</div>
+    <div *ngSwitchCase="'blue'">you have choosen blue color</div>
+    <div *ngSwitchCase="'green'">you have choosen green color</div>
+    <div *ngSwitchDefault>get default color</div>
+</div>
+
+<div *ngFor="let picker of colors;index as i ">
+    <h5>{{i}} {{picker}}</h5>
+</div>
