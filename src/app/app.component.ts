@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   greeting = 'interpolation concept';
+  public name="sanjay";
 }

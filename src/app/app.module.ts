@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NewcomponentComponent } from './newcomponent/newcomponent.component';
 import { DisplayDirectiveComponent } from './display-directive/display-directive.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewcomponentComponent,
-    DisplayDirectiveComponent
+    DisplayDirectiveComponent,
+    TestComponent
     ],
   imports: [
     BrowserModule,
