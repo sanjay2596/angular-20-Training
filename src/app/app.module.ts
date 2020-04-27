@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { NewcomponentComponent } from './newcomponent/newcomponent.component';
 import { DisplayDirectiveComponent } from './display-directive/display-directive.component';
 import { TestComponent } from './test/test.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewcomponentComponent,
     DisplayDirectiveComponent,
-    TestComponent
+    TestComponent,
+    EmployeeListComponent,
+    EmployeeDetailComponent
     ],
   imports: [
     BrowserModule,
