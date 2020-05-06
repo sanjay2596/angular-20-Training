@@ -7,5 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   greeting = 'interpolation concept';
-  public name="sanjay";
+  public title="sanjay";
+  value = 0;
+  message: string;
+  
+  increment() {
+    if (this.value < 15) {
+      this.value += 1;
+      this.message = '';
+      console.log(this.value);
+    } else {
+      this.message = 'Maximum reached!';
+    }
+  }
 }

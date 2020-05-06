@@ -14,22 +14,15 @@ describe('AppComponent', () => {
     }).compileComponents();
   }));
 
-  it('should create the app', () => {
+  it(`should have as title 'sanjay'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
+    expect(app.title).toEqual('sanjay');
   });
-
-  it(`should have as title 'First-project'`, () => {
+  it('should increment value', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('First-project');
-  });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('First-project app is running!');
+    fixture.componentInstance.increment();
+    expect(fixture.componentInstance.value).toEqual(1);
   });
 });
